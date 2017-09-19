@@ -22,8 +22,9 @@ class CategoryController extends Controller
     {
         $user=User::find(Auth::User()->id);
         $cat=Category::all();
+        $subCat=Subcategory::all();
         if($user->role=='admin' && $user->status=='active'){
-            return view('user.addNewCategory',compact('cat'));
+            return view('user.addNewCategory',compact('cat','subCat'));
         }else{
             return ['message'=>'You are not authorized to perform this task'];
         }
@@ -42,14 +43,14 @@ class CategoryController extends Controller
             $category->name=$request->get('name');
             $category->save();
             $cat=Category::all();
-            return view('user.addNewCategory',compact('cat','user'));
+            $subCat=Subcategory::all();
+            return view('user.addNewCategory',compact('cat','user','subCat'));
         }else{
             return ['message'=>'You are not authorized to perform this task'];
         }
     }
 
     public function createSubCategory(Request $request){
-        //dd($request->get('catPatch'));
         $user=User::find(Auth::User()->id);
         if($user->role=='admin' && $user->status=='active'){
             $subcategory=new Subcategory();
@@ -57,65 +58,20 @@ class CategoryController extends Controller
             $subcategory->category_id=$request->get('catPatch');
             $subcategory->save();
             $cat=Category::all();
-            return view('user.addNewCategory',compact('cat'));
+            $subCat=Subcategory::all();
+            return view('user.addNewCategory',compact('cat','user','subCat'));
         }else{
             return ['message'=>'You are not authorized to perform this task'];
         }
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function deleteCategory($id)
     {
-        Return Redirect()->back();
+        dd($id);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function deleteSubCategory($id)
     {
-        Return View('specificCategory');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        Return View('specificCategoryEditingForm');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        Return Redirect()->back();
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        Return View('category');
+        dd($id);
     }
 }

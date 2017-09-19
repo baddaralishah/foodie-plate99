@@ -82,6 +82,41 @@
                         </div>
                     </div>
 
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                    <th>Category Name</th>
+                                    <th>Sub-Category Name</th>
+                                    <th>Delete Category</th>
+                                    <th>Delete Sub-Category</th>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($subCat as $sub)
+
+                                    <tr>
+                                        <td>
+                                            <?php $patchedCat = $sub->Category()->get();
+                                            echo $patchedCat[0]->name ?>
+                                        </td>
+                                        <td>{{$sub->name}}</td>
+                                        <td>
+                                            <a href="/deleteCategory/{{$patchedCat = $sub->Category()->get()[0]->id}}" class="btn btn-warning">Delete Category</a>
+                                        </td>
+                                        <td>
+                                            <a href="/deleteSubCategory/{{$sub->id}}" class="btn btn-warning">Delete Sub-Category</a>
+                                        </td>
+                                    </tr>
+
+                                        @endforeach
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>

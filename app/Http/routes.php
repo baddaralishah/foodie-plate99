@@ -32,6 +32,8 @@ Route::post('/statusProfile/{id}','HomeController@userStatus');
 Route::get('/addCategory','CategoryController@index');
 Route::post('/createCategory','CategoryController@createCategory');
 Route::post('/createSubCategory','CategoryController@createSubCategory');
+Route::get('/deleteCategory/{id}','CategoryController@deleteCategory');
+Route::get('/deleteSubCategory/{id}','CategoryController@deleteSubCategory');
 
 Route::get('/viewStoryForm','DishController@index');
 Route::post('/createStory','DishController@create');
