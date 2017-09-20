@@ -89,8 +89,6 @@
                                     <thead>
                                     <th>Category Name</th>
                                     <th>Sub-Category Name</th>
-                                    <th>Delete Category</th>
-                                    <th>Delete Sub-Category</th>
                                     </thead>
                                     <tbody>
                                         @foreach($subCat as $sub)
@@ -101,12 +99,6 @@
                                             echo $patchedCat[0]->name ?>
                                         </td>
                                         <td>{{$sub->name}}</td>
-                                        <td>
-                                            <a href="/deleteCategory/{{$patchedCat = $sub->Category()->get()[0]->id}}" class="btn btn-warning">Delete Category</a>
-                                        </td>
-                                        <td>
-                                            <a href="/deleteSubCategory/{{$sub->id}}" class="btn btn-warning">Delete Sub-Category</a>
-                                        </td>
                                     </tr>
 
                                         @endforeach

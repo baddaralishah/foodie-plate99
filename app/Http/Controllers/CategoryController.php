@@ -64,14 +64,4 @@ class CategoryController extends Controller
             return ['message'=>'You are not authorized to perform this task'];
         }
     }
-
-    public function deleteCategory($id)
-    {
-        dd($id);
-    }
-
-    public function deleteSubCategory($id)
-    {
-        dd($id);
-    }
 }
