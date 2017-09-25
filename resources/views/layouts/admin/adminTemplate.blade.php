@@ -40,7 +40,7 @@
 
         <div class="sidebar-wrapper">
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
+                <a href="http://www.plate99.com" class="simple-text">
                     PLATE99
                 </a>
             </div>
@@ -70,12 +70,12 @@
                         <p>Stories Control</p>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <i class="pe-7s-note2"></i>
-                        <p>History</p>
-                    </a>
-                </li>
+                {{--<li>--}}
+                    {{--<a href="#">--}}
+                        {{--<i class="pe-7s-note2"></i>--}}
+                        {{--<p>History</p>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
                 <li>
                     <a href="/viewStoryForm">
                         <i class="pe-7s-news-paper"></i>
