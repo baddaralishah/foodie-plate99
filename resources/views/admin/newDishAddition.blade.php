@@ -1,5 +1,5 @@
 
-@extends('layouts.user.userTemplate')
+@extends('layouts.admin.adminTemplate')
 @section('content')
     <div class="main-panel">
         <nav class="navbar navbar-default navbar-fixed">
