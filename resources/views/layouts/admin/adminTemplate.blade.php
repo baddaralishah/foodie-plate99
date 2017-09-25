@@ -65,7 +65,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="/storyControlSection">
                         <i class="pe-7s-photo-gallery"></i>
                         <p>Stories Control</p>
                     </a>

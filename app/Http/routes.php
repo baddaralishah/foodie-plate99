@@ -37,4 +37,7 @@ Route::get('/viewStoryForm','DishController@index');
 Route::post('/createStory','DishController@create');
 Route::post('/searchIt','DishController@search');
 
+Route::get('/storyControlSection','HomeController@storyControlSection');
+Route::post('statusStory/{id}','HomeController@statusStory');
+
 Route::get('/timeline','DishController@timeline');

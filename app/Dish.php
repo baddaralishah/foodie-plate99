@@ -13,7 +13,7 @@ class Dish extends Model
         return $this->belongsTo('App\Subcategory');
     }
 
-    public function userDish()
+    public function user()
     {
         return $this->hasMany('App\UserDish');
     }

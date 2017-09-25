@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Dish;
 use App\Http\Requests;
 use App\User;
 use Illuminate\Http\Request;
@@ -103,6 +104,38 @@ class HomeController extends Controller
             }
         }else{
             return ['message'=>'You are not authorized as your account is deactived by admin'];
+        }
+    }
+
+    public function storyControlSection(){
+        $user=User::find(Auth::User()->id);
+        if($user->role=='admin' && $user->status=='active'){
+            $dishes=Dish::all();
+            Return View('user.controllStory',compact('user','dishes'));
+        }else{
+            Return ['message'=>'You are not authorized to avail this section'];
+        }
+    }
+
+    public function statusStory($id){
+        $dishe=Dish::find($id);
+        $user=User::find(Auth::User()->id);
+        if($user->role=='admin' && $user->status=='active'){
+        if($dishe->status=='active'){
+            $dishe->status='deactive';
+            $dishe->save();
+            $dishes=Dish::all();
+            return View('user.controllStory',compact('dishes','user'));
+
+        }else{
+            $dishe->status='active';
+            $dishe->save();
+            $dishes=Dish::all();
+            return View('user.controllStory',compact('dishes','user'));
+
+        }
+        }else{
+            return['message'=>'You are not authorized to perfrom this task'];
         }
     }
 }
