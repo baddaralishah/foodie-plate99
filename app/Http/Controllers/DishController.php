@@ -14,11 +14,6 @@ use Illuminate\View\View;
 
 class DishController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $user=User::find(Auth::User()->id);
@@ -50,11 +45,6 @@ class DishController extends Controller
             return ['message'=>'You are not authorized to perform this task'];
         }
     }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create(Request $request)
     {
         $user=User::find(Auth::User()->id);
@@ -110,13 +100,6 @@ class DishController extends Controller
             return ['message'=>'You are not authorized to perform this task'];
         }
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function search(Request $request)
     {
         if($request->get('catPatch')=='Nill'){
@@ -141,14 +124,11 @@ class DishController extends Controller
                     ['dish_id','=',$rawFilter->id],
                     ['city', '=', $request->get('search')]
                     ])->get();
-                   //echo $dishes."</br>";
 
             }
-            //dd($dishes);
             $user=User::find(Auth::User()->id);
             $cat=Subcategory::all();
             if($user->role=='admin' && $user->status=='active') {
-               // dd($dishes);
                 Return View('user.timelineWithCat',compact('dishes','cat'));
             }
             if($user->role=='user' && $user->status=='active') {
@@ -162,48 +142,4 @@ class DishController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        Return View('specificDish');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        Return View('specificDishEditingForm');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        Return Redirect()->back();
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        Return View('dish');
-    }
 }

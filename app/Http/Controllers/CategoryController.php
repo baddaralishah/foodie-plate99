@@ -13,11 +13,6 @@ use Illuminate\Support\Facades\Redirect;
 
 class CategoryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $user=User::find(Auth::User()->id);
@@ -30,11 +25,6 @@ class CategoryController extends Controller
         }
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function createCategory(Request $request)
     {
         $user=User::find(Auth::User()->id);
