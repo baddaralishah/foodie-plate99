@@ -41,3 +41,4 @@ Route::get('/storyControlSection','HomeController@storyControlSection');
 Route::post('statusStory/{id}','HomeController@statusStory');
 
 Route::get('/timeline','DishController@timeline');
+Route::get('indiviualHistory','HomeController@indiviualHistory');

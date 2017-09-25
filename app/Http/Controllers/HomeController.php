@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Dish;
 use App\Http\Requests;
 use App\User;
+use App\UserDish;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Auth;
@@ -136,6 +137,17 @@ class HomeController extends Controller
         }
         }else{
             return['message'=>'You are not authorized to perfrom this task'];
+        }
+    }
+
+    public function indiviualHistory(){
+        $user=User::find(Auth::User()->id);
+        if($user->role=='user') {
+            $dishes = UserDish::where('uploader_id', $user->id)->get();
+            return View('user.storyHistory', compact('dishes', 'user'));
+
+        }else{
+            return ['message'=>'UnAuthorized invasion'];
         }
     }
 }
