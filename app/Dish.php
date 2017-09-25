@@ -8,7 +8,7 @@ class Dish extends Model
 {
     protected $table='dishes';
 
-    public function subCategory()
+    public function dishesSubCategory()
     {
         return $this->belongsTo('App\Subcategory');
     }

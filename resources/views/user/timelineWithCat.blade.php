@@ -40,33 +40,35 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    @foreach($dishes as $dish)
-                            @if (\App\Dish::find($dish->dish_id)->status=='active')
+                    @foreach($dishes as $dishoo)
+                        @foreach($dishoo as $dish)
+                        @if (\App\Dish::find($dish->dish_id)->status=='active')
                             <div class="col-md-4">
-                        <div class="card card-user">
-                            <div class="image" style="height: 200px">
-                                <img src="{{asset('storyImages')."/".\App\Dish::find($dish->dish_id)->image}}" alt="Dish Name {{\App\Dish::find($dish->dish_id)->name}}"/>
-                            </div>
-                            <div class="content">
-                                <div class="author">
-                                    <a href="#">
-                                        <img class="avatar border-gray" src="{{asset('profileImages')."/".\App\User::find($dish->uploader_id)->image}}" style=" width: 90px;height: 90px;" alt="{{\App\User::find($dish->uploader_id)->name}}"/>
-                                        <h4 class="title">Dish Name : {{\App\Dish::find($dish->dish_id)->name}}<br />
-                                            <small style="color:CORAL;">Uploaded as : {{\App\Dish::find($dish->dish_id)->upload_type}}</small><br/>
-                                            <small>City : {{\App\UserDish::find($dish->dish_id)->city}}</small></br>
-                                            <small>Address : {{\App\UserDish::find($dish->dish_id)->location}}</small></br>
-                                            <small>User : {{\App\User::find($dish->uploader_id)->name}}</small></br>
-                                            <small>User : {{\App\User::find($dish->uploader_id)->contact}}</small></br>
-                                        </h4>
-                                    </a>
+                                <div class="card card-user">
+                                    <div class="image" style="height: 200px">
+                                        <img src="{{asset('storyImages')."/".\App\Dish::find($dish->dish_id)->image}}" alt="Dish Name {{\App\Dish::find($dish->dish_id)->name}}"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="author">
+                                            <a href="#">
+                                                <img class="avatar border-gray" src="{{asset('profileImages')."/".\App\User::find($dish->uploader_id)->image}}" style=" width: 90px;height: 90px;" alt="{{\App\User::find($dish->uploader_id)->name}}"/>
+                                                <h4 class="title">Dish Name : {{\App\Dish::find($dish->dish_id)->name}}<br />
+                                                    <small style="color:CORAL;">Uploaded as : {{\App\Dish::find($dish->dish_id)->upload_type}}</small><br/>
+                                                    <small>City : {{\App\UserDish::find($dish->dish_id)->city}}</small></br>
+                                                    <small>Address : {{\App\UserDish::find($dish->dish_id)->location}}</small></br>
+                                                    <small>User : {{\App\User::find($dish->uploader_id)->name}}</small></br>
+                                                    <small>User : {{\App\User::find($dish->uploader_id)->contact}}</small></br>
+                                                </h4>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-
                             </div>
-
-                        </div>
-                    </div>
                         @endif
-                        @endforeach
+                            @endforeach
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -82,6 +84,6 @@
     </div>
 
 
-</div>
+    </div>
 
-    @endsection
+@endsection

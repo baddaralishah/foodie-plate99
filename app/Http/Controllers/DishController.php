@@ -37,12 +37,13 @@ class DishController extends Controller
 
     public function timeline(){
         $dishes=UserDish::all();
+        $cat=Subcategory::all();
         $user=User::find(Auth::User()->id);
         if($user->role=='admin' && $user->status=='active') {
-            Return View('user.timeline',compact('dishes'));
+            Return View('user.timeline',compact('dishes','cat'));
         }
         if($user->role=='user' && $user->status=='active') {
-            Return View('user.timeline',compact('dishes'));
+            Return View('user.timeline',compact('dishes','cat'));
 
         }
         else{
@@ -118,23 +119,47 @@ class DishController extends Controller
      */
     public function search(Request $request)
     {
-        dd($request->get('search'));
-        $dishes=UserDish::where([
-            ['location', '=', $request->get('search')],
-            ['city', '=', $request->get('search')],
-            ]);
-        dd($dishes);
+        if($request->get('catPatch')=='Nill'){
+        $dishes=UserDish::where('city', '=', $request->get('search'))->get();
         $user=User::find(Auth::User()->id);
+        $cat=Subcategory::all();
         if($user->role=='admin' && $user->status=='active') {
-            Return View('user.timeline',compact('dishes'));
+            Return View('user.timeline',compact('dishes','cat'));
         }
         if($user->role=='user' && $user->status=='active') {
-            Return View('user.timeline',compact('dishes'));
+            Return View('user.timeline',compact('dishes','cat'));
 
         }
         else{
-            return ['message'=>'You are not authorized to perform this task'];
+            return ['message'=>'You are not authorized to perform this task or Problem in Searching'];
         }
+        }
+        else{
+            $alldishes=Dish::where('sub_category_id',$request->get('catPatch'))->get();
+            foreach ($alldishes as $rawFilter){
+                $dishes[]=UserDish::where([
+                    ['dish_id','=',$rawFilter->id],
+                    ['city', '=', $request->get('search')]
+                    ])->get();
+                   //echo $dishes."</br>";
+
+            }
+            //dd($dishes);
+            $user=User::find(Auth::User()->id);
+            $cat=Subcategory::all();
+            if($user->role=='admin' && $user->status=='active') {
+               // dd($dishes);
+                Return View('user.timelineWithCat',compact('dishes','cat'));
+            }
+            if($user->role=='user' && $user->status=='active') {
+                Return View('user.timelineWithCat',compact('dishes','cat'));
+
+            }
+            else{
+                return ['message'=>'You are not authorized to perform this task or Problem in Searching'];
+            }
+        }
+
     }
 
     /**
