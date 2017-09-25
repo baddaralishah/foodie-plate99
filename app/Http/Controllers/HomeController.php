@@ -26,7 +26,7 @@ class HomeController extends Controller
             return view('user.viewUser',compact('user'))->with('error');
         }
         if($user->role=='admin' && $user->status=='active'){
-            return view('user.viewAdmin',compact('user'));
+            return view('admin.viewAdmin',compact('user'));
         }else{
             return Redirect::back();
         }
@@ -48,7 +48,7 @@ class HomeController extends Controller
         $user=User::find(Auth::User()->id);
         $users=User::all();
         if($user->role=='admin' && $user->status=='active'){
-            Return View('user.allusers',compact('users'));
+            Return View('admin.allusers',compact('users'));
         }else{
             Return ['message'=>'You are not authorized to avail this section'];
         }
@@ -60,13 +60,13 @@ class HomeController extends Controller
             $user->status='deactive';
             $user->save();
             $users=User::all();
-            return View('user.allusers',compact('users'));
+            return View('admin.allusers',compact('users'));
 
         }else{
             $user->status='active';
             $user->save();
             $users=User::all();
-            return View('user.allusers',compact('users'));
+            return View('admin.allusers',compact('users'));
 
         }
     }
@@ -98,7 +98,7 @@ class HomeController extends Controller
                 return view('user.viewUser', compact('user'));
             }
             if ($user->role == 'admin') {
-                return view('user.viewAdmin', compact('user'));
+                return view('admin.viewAdmin', compact('user'));
             } else {
                 return Redirect::back();
             }
@@ -111,7 +111,7 @@ class HomeController extends Controller
         $user=User::find(Auth::User()->id);
         if($user->role=='admin' && $user->status=='active'){
             $dishes=Dish::all();
-            Return View('user.controllStory',compact('user','dishes'));
+            Return View('admin.controllStory',compact('user','dishes'));
         }else{
             Return ['message'=>'You are not authorized to avail this section'];
         }
@@ -125,13 +125,13 @@ class HomeController extends Controller
             $dishe->status='deactive';
             $dishe->save();
             $dishes=Dish::all();
-            return View('user.controllStory',compact('dishes','user'));
+            return View('admin.controllStory',compact('dishes','user'));
 
         }else{
             $dishe->status='active';
             $dishe->save();
             $dishes=Dish::all();
-            return View('user.controllStory',compact('dishes','user'));
+            return View('admin.controllStory',compact('dishes','user'));
 
         }
         }else{

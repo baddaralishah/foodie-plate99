@@ -19,7 +19,7 @@ class CategoryController extends Controller
         $cat=Category::all();
         $subCat=Subcategory::all();
         if($user->role=='admin' && $user->status=='active'){
-            return view('user.addNewCategory',compact('cat','subCat'));
+            return view('admin.addNewCategory',compact('cat','subCat'));
         }else{
             return ['message'=>'You are not authorized to perform this task'];
         }
@@ -34,7 +34,7 @@ class CategoryController extends Controller
             $category->save();
             $cat=Category::all();
             $subCat=Subcategory::all();
-            return view('user.addNewCategory',compact('cat','user','subCat'));
+            return view('admin.addNewCategory',compact('cat','user','subCat'));
         }else{
             return ['message'=>'You are not authorized to perform this task'];
         }
@@ -49,7 +49,7 @@ class CategoryController extends Controller
             $subcategory->save();
             $cat=Category::all();
             $subCat=Subcategory::all();
-            return view('user.addNewCategory',compact('cat','user','subCat'));
+            return view('admin.addNewCategory',compact('cat','user','subCat'));
         }else{
             return ['message'=>'You are not authorized to perform this task'];
         }

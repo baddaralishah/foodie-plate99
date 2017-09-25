@@ -19,7 +19,7 @@ class DishController extends Controller
         $user=User::find(Auth::User()->id);
         $cat=Subcategory::all();
         if($user->role=='admin' && $user->status=='active') {
-            Return View('user.newStory',compact('cat'));
+            Return View('admin.newStory',compact('cat'));
         }
         if($user->role=='user' && $user->status=='active') {
             Return View('user.newStory',compact('cat'));
@@ -35,7 +35,7 @@ class DishController extends Controller
         $cat=Subcategory::all();
         $user=User::find(Auth::User()->id);
         if($user->role=='admin' && $user->status=='active') {
-            Return View('user.timeline',compact('dishes','cat'));
+            Return View('admin.timeline',compact('dishes','cat'));
         }
         if($user->role=='user' && $user->status=='active') {
             Return View('user.timeline',compact('dishes','cat'));
@@ -73,7 +73,7 @@ class DishController extends Controller
             $connection->location=$request->get('location');
             $connection->save();
 
-            return view('user.newStory',compact('cat','user'));
+            return view('admin.newStory',compact('cat','user'));
         }
         if($user->role=='user' && $user->status=='active'){
 
@@ -107,7 +107,7 @@ class DishController extends Controller
         $user=User::find(Auth::User()->id);
         $cat=Subcategory::all();
         if($user->role=='admin' && $user->status=='active') {
-            Return View('user.timeline',compact('dishes','cat'));
+            Return View('admin.timeline',compact('dishes','cat'));
         }
         if($user->role=='user' && $user->status=='active') {
             Return View('user.timeline',compact('dishes','cat'));
@@ -129,7 +129,7 @@ class DishController extends Controller
             $user=User::find(Auth::User()->id);
             $cat=Subcategory::all();
             if($user->role=='admin' && $user->status=='active') {
-                Return View('user.timelineWithCat',compact('dishes','cat'));
+                Return View('admin.timelineWithCat',compact('dishes','cat'));
             }
             if($user->role=='user' && $user->status=='active') {
                 Return View('user.timelineWithCat',compact('dishes','cat'));
