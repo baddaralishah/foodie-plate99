@@ -44,6 +44,10 @@
                             <form class="form-horizontal" role="form" method="POST" action="{{ url('/statusProfile/'.$user->id)}}">
                                 {{ csrf_field() }}
                             &nbsp; <button class="btn btn-warning" type="submit"><?php echo $user->status?></button>
+                            </form><br/>
+                            <form class="form-horizontal" role="form" method="POST" action="{{ url('/makeAdmin/'.$user->id)}}">
+                                {{ csrf_field() }}
+                                &nbsp; <button class="btn btn-info" type="submit"><?php echo $user->role?></button>
                             </form>
                         </div>
                     </div>

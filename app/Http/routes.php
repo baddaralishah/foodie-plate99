@@ -28,6 +28,8 @@ Route::post('/update', 'HomeController@update');
 Route::post('/changePassword','HomeController@passwordUpdate');
 Route::get('/allUsers','HomeController@allUsers');
 Route::post('/statusProfile/{id}','HomeController@userStatus');
+Route::post('/makeAdmin/{id}','HomeController@makeAdmin');
+
 
 Route::get('/addCategory','CategoryController@index');
 Route::post('/createCategory','CategoryController@createCategory');

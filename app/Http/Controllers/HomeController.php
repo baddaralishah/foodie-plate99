@@ -55,7 +55,32 @@ class HomeController extends Controller
         }
     }
 
-    public function userStatus(Request $request,$id){
+    public function makeAdmin($id)
+    {
+        $user=User::find(Auth::User()->id);
+        if($user->role=='admin' && $user->status=='active'){
+            $userMakedAdmin=User::find($id);
+            if($userMakedAdmin->role=='admin'){
+                $changedRoleToUser=User::find($id);
+                $changedRoleToUser->role='user';
+                $changedRoleToUser->save();
+                $users=User::all();
+                Return View('admin.allusers',compact('users'));
+            }
+            if($userMakedAdmin->role=='user'){
+                $changedRoleToAdmin=User::find($id);
+                $changedRoleToAdmin->role='admin';
+                $changedRoleToAdmin->save();
+                $users=User::all();
+                Return View('admin.allusers',compact('users'));
+            }
+
+        }else{
+            Return ['message'=>'You are not authorized to avail this section'];
+        }
+    }
+
+    public function userStatus($id){
         $user=User::find($id);
         if($user->status=='active'){
             $user->status='deactive';

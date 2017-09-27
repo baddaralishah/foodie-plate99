@@ -2,10 +2,197 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56f9bc81-a003-4956-b2b3-06ddb668b9fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/user/storyHistory.blade.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/css/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/css/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/css/light-bootstrap-dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/css/pe-icon-7-stroke.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/fonts/Pe-icon-7-stroke.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/fonts/Pe-icon-7-stroke.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/fonts/Pe-icon-7-stroke.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/fonts/Pe-icon-7-stroke.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/default-avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/faces/face-0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/faces/face-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/faces/face-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/faces/face-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/faces/face-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/faces/face-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/faces/face-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/faces/face-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/faces/tim_vector.jpe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/faviconBlack.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/loading-bubbles.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/new_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/sidebar-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/sidebar-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/sidebar-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/sidebar-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/sidebar-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/img/tim_80x80.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/js/bootstrap-checkbox-radio-switch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/js/bootstrap-notify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/js/bootstrap-select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/js/chartist.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/js/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/js/jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/js/light-bootstrap-dashboard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_alerts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_cards.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_chartist.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_checkbox-radio-switch.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_dropdown.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_footers.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_inputs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_misc.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_navbars.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_responsive.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_sidebar-and-main-panel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_typography.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_cards.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_chartist.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_inputs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_labels.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_morphing-buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_navbars.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_social-buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_transparency.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/lbd/mixins/_vendor-prefixes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/sass/light-bootstrap-dashboard.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/maps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/notifications.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/profile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/table.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/typography.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/upgrade.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/user.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/css/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/css/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/css/light-bootstrap-dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/css/pe-icon-7-stroke.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/fonts/Pe-icon-7-stroke.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/fonts/Pe-icon-7-stroke.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/fonts/Pe-icon-7-stroke.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/fonts/Pe-icon-7-stroke.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/default-avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/faces/face-0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/faces/face-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/faces/face-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/faces/face-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/faces/face-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/faces/face-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/faces/face-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/faces/face-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/faces/tim_vector.jpe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/faviconBlack.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/loading-bubbles.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/new_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/sidebar-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/sidebar-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/sidebar-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/sidebar-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/sidebar-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/img/tim_80x80.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/js/bootstrap-checkbox-radio-switch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/js/bootstrap-notify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/js/bootstrap-select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/js/chartist.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/js/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/js/jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/js/light-bootstrap-dashboard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_alerts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_cards.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_chartist.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_checkbox-radio-switch.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_dropdown.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_footers.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_inputs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_misc.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_navbars.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_responsive.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_sidebar-and-main-panel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_typography.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_cards.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_chartist.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_inputs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_labels.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_morphing-buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_navbars.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_social-buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_transparency.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/lbd/mixins/_vendor-prefixes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/assets/sass/light-bootstrap-dashboard.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/maps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/notifications.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/profile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/table.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/typography.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/upgrade.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/light-bootstrap-dashboard-master/user/user.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/default-avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faces/face-0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faces/face-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faces/face-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faces/face-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faces/face-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faces/face-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faces/face-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faces/face-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faces/tim_vector.jpe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faviconBlack.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/loading-bubbles.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/new_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sidebar-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sidebar-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sidebar-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sidebar-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sidebar-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/tim_80x80.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/profileImages/-plate99-1503564295-mujtaba.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/profileImages/-plate99-1503578082-official.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/profileImages/-plate99-1503582947-official.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/profileImages/-plate99-1504082150-official.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/profileImages/-plate99-1504082261-mujtaba2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storyImages/-plate99-1504088565-dish.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storyImages/-plate99-1504100235-champye.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/storyImages/-plate99-1506321543-charga-roast-1-638.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/allusers.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/allusers.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +203,38 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="60" column="34" lean-forward="false" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allusers.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/allusers.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="110" lean-forward="false" selection-start-line="47" selection-start-column="101" selection-end-line="47" selection-end-column="110" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -30,6 +248,7 @@
       <find>search</find>
       <find>searchIt</find>
       <find>timeline</find>
+      <find>allUsers</find>
     </findStrings>
     <replaceStrings>
       <replace>$user</replace>
@@ -83,9 +302,10 @@
         <option value="$PROJECT_DIR$/resources/views/user/timelineWithCat.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/newDishAddition.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/viewUser.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/storyHistory.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/allusers.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/storyHistory.blade.php" />
       </list>
     </option>
   </component>
@@ -110,7 +330,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -124,7 +344,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -137,174 +356,9 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plate99" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Auth" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -413,38 +467,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="storyImages">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="plate99">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="database">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="plate99">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="database">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="migrations">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -628,28 +650,31 @@
       <workItem from="1505400611427" duration="620000" />
       <workItem from="1505740095588" duration="13907000" />
       <workItem from="1505883010818" duration="9311000" />
-      <workItem from="1506311079273" duration="15990000" />
+      <workItem from="1506311079273" duration="16079000" />
+      <workItem from="1506418423194" duration="5940000" />
+      <workItem from="1506500533341" duration="622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147572000" />
+    <option name="totallyTimeSpent" value="154223000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1366" height="683" extended-state="1" />
+    <frame x="0" y="30" width="1366" height="683" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22348484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291367" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30755395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3063063" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -698,27 +723,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/css/animate.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/light-bootstrap-dashboard-master/admin/assets/css/light-bootstrap-dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="1232" column="0" lean-forward="false" selection-start-line="1232" selection-start-column="0" selection-end-line="1232" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/viewAdmin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/viewAdmin.blade.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -775,13 +780,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/light-bootstrap-dashboard-master/user/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/light-bootstrap-dashboard-master/user/dashboard.html" />
     <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -811,13 +810,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/viewAdmin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/viewAdmin.blade.php" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -825,18 +818,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/light-bootstrap-dashboard-master/user/table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="146" column="29" lean-forward="true" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/light-bootstrap-dashboard-master/user/table.html" />
     <entry file="file://$PROJECT_DIR$/app/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,35 +847,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/addNewCategory.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" column="64" lean-forward="false" selection-start-line="93" selection-start-column="60" selection-end-line="93" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/addNewCategory.blade.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/allusers.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/allusers.blade.php" />
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,23 +867,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/controllStory.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/controllStory.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/user/userTemplate.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="66" column="43" lean-forward="false" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,7 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="131" column="34" lean-forward="false" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="79" column="43" lean-forward="false" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,7 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
           <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,15 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/allusers.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,7 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="68" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,24 +994,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/allusers.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="110" lean-forward="false" selection-start-line="47" selection-start-column="101" selection-end-line="47" selection-end-column="110" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="146" column="42" lean-forward="false" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="42" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="43" column="62" lean-forward="false" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="62" />
+        <state relative-caret-position="202">
+          <caret line="60" column="34" lean-forward="false" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
           <folding />
         </state>
       </provider>
