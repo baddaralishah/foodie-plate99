@@ -33,6 +33,7 @@ class HomeController extends Controller
         }
     }
 
+
     public function passwordUpdate(Request $request)
     {
         $this->validate($request, [

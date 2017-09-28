@@ -192,7 +192,7 @@ h5 {
 
 .box-header {
     height: 80px;
-    background: transparent;
+    background: CORAL;
     box-shadow: none;
 }
 
@@ -208,7 +208,7 @@ h5 {
 .box-header.is-fixed {
     position: fixed;
     top: -80px;
-    background-color: rgba(255, 255, 255, 0.96);
+    background-color: rgba(255, 127, 80, 0.96);
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
@@ -309,7 +309,7 @@ h5 {
 .box-primary-nav-trigger {
     width: 100px;
     padding-left: 1em;
-    background-color: transparent;
+    background-color: white;
     height: 30px;
     line-height: 30px;
     right: 10px;
@@ -830,7 +830,7 @@ footer {
 }
 
 .copyright {
-    color: #ccc;
+    color: CORAL;
     margin-bottom: 0;
 }
 
@@ -891,8 +891,8 @@ footer img {
 .top-bar {
     color: #333;
     padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
+    background: -webkit-linear-gradient( rgba(0, 0, 0, .4), rgba(255, 255, 255, .4)), url(../img/homeMain.jpg);
+    background: linear-gradient( rgba(0, 0, 0, .4), rgba(255, 255, 255, .4)), url(../img/homeMain.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -903,7 +903,7 @@ footer img {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #999;
+    color: White;
     line-height: 50px;
 }
 
@@ -911,16 +911,16 @@ footer img {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #777;
+    color: white;
 }
 
 .top-bar p a {
-    color: #777;
+    color: white;
 }
 
 .top-bar p a:hover,
 .top-bar p a:focus {
-    color: #555;
+    color: CORAL;
     text-decoration: none;
 }
 
