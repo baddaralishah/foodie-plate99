@@ -41,7 +41,7 @@
         <div class="sidebar-wrapper">
             <div class="logo">
                 <a href="/" class="simple-text">
-                    PLATE99
+                    <a href="/"><img src="img/fav.png" width="50" alt="Logo"></a>
                 </a>
             </div>
 
