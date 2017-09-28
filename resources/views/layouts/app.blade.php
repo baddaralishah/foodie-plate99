@@ -5,18 +5,16 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>PLATE99-</title>
+    <title>PLATE99</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
-
+    <link rel="shortcut icon" href="{{asset('/img/favBlack.png')}}" type="image/x-icon">
     <!-- Bootstrap core CSS     -->
     <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet" />
 
     <!-- Animation library for notifications   -->
     <link href="{{asset('/css/animate.min.css')}}" rel="stylesheet"/>
-
     <!--  Light Bootstrap Table core CSS    -->
     <link href="{{asset('/css/light-bootstrap-dashboard.css')}}" rel="stylesheet"/>
 
