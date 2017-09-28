@@ -9,7 +9,7 @@
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
+    <link rel="shortcut icon" href="{{asset('/img/favBlack.png')}}" type="image/x-icon">
 
     <!-- Bootstrap core CSS     -->
     <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet" />
@@ -40,7 +40,7 @@
 
         <div class="sidebar-wrapper">
             <div class="logo">
-                <a href="http://www.plate99.com" class="simple-text">
+                <a href="/" class="simple-text">
                     PLATE99
                 </a>
             </div>
