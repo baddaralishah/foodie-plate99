@@ -9,7 +9,7 @@
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
+    <link rel="shortcut icon" href="{{asset('/img/favBlack.png')}}" type="image/x-icon">
 
     <!-- Bootstrap core CSS     -->
     <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet" />
@@ -39,14 +39,14 @@
 
         <div class="sidebar-wrapper">
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
-                    PLATE99
+                <a href="/" class="simple-text">
+                    <a href="/"><img src="img/fav.png" width="50" alt="Logo"></a>
                 </a>
             </div>
 
             <ul class="nav">
                 <li>
-                    <a href="#">
+                    <a href="/timeline">
                         <i class="pe-7s-graph"></i>
                         <p>TIMELINE</p>
                     </a>
@@ -58,13 +58,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="/indiviualHistory">
                         <i class="pe-7s-note2"></i>
                         <p>History</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/newStory">
+                    <a href="/viewStoryForm">
                         <i class="pe-7s-news-paper"></i>
                         <p>add New Story</p>
                     </a>

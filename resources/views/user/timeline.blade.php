@@ -1,4 +1,4 @@
-@extends('layouts.admin.adminTemplate')
+@extends('layouts.user.userTemplate')
 @section('content')
 
     <div class="main-panel">
@@ -19,25 +19,30 @@
         </nav><br/>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
                     <form class="form-horizontal .form-inline" role="form" method="POST" action="{{ url('/searchIt')}} " enctype="multipart/form-data">
                         {{ csrf_field() }}
-                        <input class=" col-md-12 form-control" type="text" id="searchIT" name="search" placeholder="Search Location, Dish Name or City" onchange="searchFunction()">
-                        <button type="submit" class="btn btn-info btn-fill col-md-12">Search</button>
+                        <select class=" col-sm-6 form-control" name="catPatch"required>
+                            <option value="Nill">-----</option>
+                            @foreach($cat as $cate)
+                                <option value="{{$cate->id}}">{{$cate->name}}</option>
+                            @endforeach
+                        </select>
+                        <input class=" col-sm-6 form-control" type="text" id="searchIT" name="search" value="Search by City" onchange="searchFunction()">
+                        <button type="submit" class="btn btn-info btn-fill col-sm-6 pull-right">Search</button>
                     </form>
                 </div>
-                <div class="col-md-3"></div>
+                <div class="col-sm-3"></div>
             </div>
         </div>
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
+
                     @foreach($dishes as $dish)
-
-                        @if (\App\Dish::find($dish->dish_id)->status=='active')
-
-                    <div class="col-md-4">
+                            @if (\App\Dish::find($dish->dish_id)->status=='active')
+                            <div class="col-md-4">
                         <div class="card card-user">
                             <div class="image" style="height: 200px">
                                 <img src="{{asset('storyImages')."/".\App\Dish::find($dish->dish_id)->image}}" alt="Dish Name {{\App\Dish::find($dish->dish_id)->name}}"/>
@@ -65,6 +70,7 @@
                 </div>
             </div>
         </div>
+        <h3 style="text-align: center">Data End or Bad Search </h3>
         <footer class="footer">
             <div class="container-fluid">
 
