@@ -11,7 +11,13 @@
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-6">
-            <form action="#" method="post">
+            @if($message)
+            <div class="center">
+                <p>{{$message}}</p>
+            </div>
+            @endif
+            <form class="form-horizontal" role="form" method="POST" action="{{ url('/createQuery')}} " enctype="multipart/form-data">
+                {{ csrf_field() }}
                 <div class="row">
                     <div class="col-md-6">
                         <div class="input-contact">
@@ -21,24 +27,24 @@
                     </div>
                     <div class="col-md-6">
                         <div class="input-contact">
-                            <input type="text" name="email">
+                            <input type="email" name="email">
                             <span>Your email</span>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="input-contact">
-                            <input type="text" name="object">
-                            <span>object</span>
+                            <input type="text" name="subject">
+                            <span>Subject</span>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="textarea-contact">
                             <textarea name="message"></textarea>
-                            <span>message</span>
+                            <span>Message</span>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <a href="#" class="btn btn-box pull-right">Send</a>
+                        <button class="btn btn-box pull-right" type="submit">Send</button>
                     </div>
                 </div>
             </form>

@@ -70,12 +70,6 @@
                         <p>Stories Control</p>
                     </a>
                 </li>
-                {{--<li>--}}
-                    {{--<a href="#">--}}
-                        {{--<i class="pe-7s-note2"></i>--}}
-                        {{--<p>History</p>--}}
-                    {{--</a>--}}
-                {{--</li>--}}
                 <li>
                     <a href="/viewStoryForm">
                         <i class="pe-7s-news-paper"></i>
@@ -89,7 +83,12 @@
                         <p>Category and Sub-Category</p>
                     </a>
                 </li>
-
+                <li>
+                    <a href="/displayAllQueries">
+                        <i class="pe-7s-note2"></i>
+                        <p>Queries</p>
+                    </a>
+                </li>
 
                 <li class="active-pro">
                     <a href="/logout">

@@ -288,6 +288,7 @@ class ComposerStaticInit7b78a1d2ae2db9746d0b7cb7b3ad4238
         'CreateDishsTable' => __DIR__ . '/../..' . '/database/migrations/2017_08_02_132704_create_dishs_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateSubcatsTable' => __DIR__ . '/../..' . '/database/migrations/2017_08_02_132632_create_subcats_table.php',
+        'CreateSupportsTable' => __DIR__ . '/../..' . '/database/migrations/2017_09_29_063332_create_supports_table.php',
         'CreateUserDishTable' => __DIR__ . '/../..' . '/database/migrations/2017_08_02_132738_create_user_dish_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
@@ -806,7 +807,6 @@ class ComposerStaticInit7b78a1d2ae2db9746d0b7cb7b3ad4238
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
-        'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

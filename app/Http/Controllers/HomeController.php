@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Dish;
 use App\Http\Requests;
+use App\Support;
 use App\User;
 use App\UserDish;
 use Illuminate\Http\Request;
@@ -33,6 +34,45 @@ class HomeController extends Controller
         }
     }
 
+    public function displayAllQueries(){
+        $queriesToDisplay=Support::all();
+        $user=User::find(Auth::User()->id);
+        if($user->role=='admin' && $user->status=='active'){
+            return view('admin.viewAllQueries',compact('user','queriesToDisplay'));
+        }else{
+            return ['message'=>'You are not authorized to avail this section'];
+        }
+    }
+
+    public function statusQuery($id){
+        $support=Support::find($id);
+        $admin=User::find(Auth::User()->id);
+        if($admin->status=='active' && $admin->role=='admin') {
+            if ($support->status == 'active') {
+                $support->status = 'progress';
+                $support->save();
+                $queriesToDisplay = Support::all();
+                return View('admin.viewAllQueries', compact('queriesToDisplay'));
+
+            }
+            if ($support->status == 'progress') {
+                $support->status = 'close';
+                $support->save();
+                $queriesToDisplay = Support::all();
+                return View('admin.viewAllQueries', compact('queriesToDisplay'));
+
+            }
+            else {
+                $support->status = 'active';
+                $support->save();
+                $queriesToDisplay = Support::all();
+                return View('admin.viewAllQueries', compact('queriesToDisplay'));
+
+            }
+        }else{
+            return ['message'=>'You are not authorized to avail this section'];
+        }
+    }
 
     public function passwordUpdate(Request $request)
     {
@@ -83,18 +123,23 @@ class HomeController extends Controller
 
     public function userStatus($id){
         $user=User::find($id);
-        if($user->status=='active'){
-            $user->status='deactive';
-            $user->save();
-            $users=User::all();
-            return View('admin.allusers',compact('users'));
+        $admin=User::find(Auth::User()->id);
+        if($admin->status=='admin' && $admin->role=='admin') {
+            if ($user->status == 'active') {
+                $user->status = 'deactive';
+                $user->save();
+                $users = User::all();
+                return View('admin.allusers', compact('users'));
 
+            } else {
+                $user->status = 'active';
+                $user->save();
+                $users = User::all();
+                return View('admin.allusers', compact('users'));
+
+            }
         }else{
-            $user->status='active';
-            $user->save();
-            $users=User::all();
-            return View('admin.allusers',compact('users'));
-
+            return ['message'=>'You are not authorized to avail this section'];
         }
     }
 
@@ -176,4 +221,5 @@ class HomeController extends Controller
             return ['message'=>'UnAuthorized invasion'];
         }
     }
+
 }
