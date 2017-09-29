@@ -31,7 +31,7 @@
                                     <div class="content">
                                         <div class="author">
                                             <a href="#">
-                                                <img class="avatar border-gray" src="{{asset('storyImages')."/".$dish->image}}" style=" width: 90px;height: 90px;" alt="{{$dish->name}}"/>
+                                                <img class="avatar border-gray" src="{{asset('profileImages')."/".$user->image}}" style=" width: 90px;height: 90px;" alt="{{$dish->name}}"/>
                                                 <h4 class="title">Dish Name : {{$dish->name}}<br />
                                                 </h4>
                                                 <p>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 26, 2017 at 01:23 ش
+-- Generation Time: Sep 29, 2017 at 09:50 ص
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -72,7 +72,8 @@ INSERT INTO `migrations` (`migration`, `batch`) VALUES
 ('2017_08_02_132623_create_cats_table', 1),
 ('2017_08_02_132632_create_subcats_table', 1),
 ('2017_08_02_132704_create_dishs_table', 1),
-('2017_08_02_132738_create_user_dish_table', 1);
+('2017_08_02_132738_create_user_dish_table', 1),
+('2017_09_29_063332_create_supports_table', 1);
 
 -- --------------------------------------------------------
 
@@ -84,6 +85,23 @@ CREATE TABLE `password_resets` (
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `token` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `queries`
+--
+
+CREATE TABLE `queries` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `sender_Name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `sender_Email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `sender_Subject` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `message` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `status` enum('active','progress','close') COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -146,8 +164,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `image`, `about`, `address`, `city`, `country`, `contact`, `role`, `status`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Badar Ali', 'badarali@plate99.com', '$2y$10$VrP5Fj/2dbZ1NFhOYC5XWO2MoiWeilTFo9ZgxapE7hKPhdsqxmvR.', '-plate99-1506423065-official.jpg', 'I love to call my self foodie guy. I feel proud on developing this amazing project. I have developed this application in Laravel a PHP based framework.', 'Wahdat Colony 54000 Lahore, Pakistan.', 'Lahore', 'Pakistan', '0092 332 4243 699', 'admin', 'active', 'Bxndt1c41NWX03TCNFqQtjkSc16JecWDAIAcS6X8Q05wP9CVz2LGOmQC8vYU', '2017-09-26 05:51:05', '2017-09-26 06:23:30'),
-(2, 'Mujtaba Ali Haider', 'mujtabali@plate99.com', '$2y$10$hF73tE.1cnSO0uQxdObojefwwTJfomDb43PZKlzD332zBX.cVEE5e', '-plate99-1506424051-mujtaba2.jpg', 'I always thought that out in world there should be some way or platform to share food. I have ladyfinger and my mom love to make this dish. I used to share it with my friends during lunch time. Now, Officially let me introduce this system to people like me. It''s totally free. Share and stay healthy.', 'Officer Colony 54000 Lahore, Pakistan', 'Lahore', 'Pakistan', '0092 334 9741 239', 'admin', 'active', 'E52jUCimXUMz7ng3M6oGgq2ih6rAiV6inWb67nXMaD1dhFYMZQFGfVcjCyuZ', '2017-09-26 06:07:31', '2017-09-26 06:22:35');
+(1, 'Badar Ali', 'badarali@plate99.com', '$2y$10$Jo9ox9.scYrrfJ1P2xuhauXz/2Y6bvJZjwX9VEdDfecJ6RS1reXhm', '-plate99-1506671109-official.jpg', 'I love to call my self foodie guy. I feel proud on developing this amazing project. I have developed this application in Laravel a PHP based framework.', 'H-37 Wahdat Colony Lahore 54000, Pakistan', 'Lahore', 'Pakistan', '0092 332 4243699', 'admin', 'active', 'E76GRUqZyI7cWEKAW7RYTr8Yscr4H639fnDZUfDF4DWVQXboYMpMevBGJsH9', '2017-09-29 02:45:09', '2017-09-29 02:45:37'),
+(2, 'Mujtaba Ali Haider', 'mujtabali@plate99.com', '$2y$10$v96Pqy8U1YNFECFmz6TpB.dqFnnYjfwAVAfpaXscVDESfFZllKtTy', '-plate99-1506671329--plate99-1506424051-mujtaba2.jpg', 'I always thought that out in world there should be some way or platform to share food. I have ladyfinger and my mom love to make this dish. I used to share it with my friends during lunch time. Now, Officially let me introduce this system to people like me. It''s totally free. Share and stay healthy.', 'Officer Colony Lahore 54000, Pakistan', 'Lahore', 'Pakistan', '0092 334 9741 239', 'admin', 'active', 'd27NqUVyEF6KMBOMtl1j9ILzcGz9UR1yZEOyfh1DmwqzdOWAVVRcENFRqNli', '2017-09-29 02:48:49', '2017-09-29 02:49:10');
 
 --
 -- Indexes for dumped tables
@@ -172,6 +190,12 @@ ALTER TABLE `dishes`
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`),
   ADD KEY `password_resets_token_index` (`token`);
+
+--
+-- Indexes for table `queries`
+--
+ALTER TABLE `queries`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `subCats`
@@ -208,6 +232,11 @@ ALTER TABLE `cats`
 -- AUTO_INCREMENT for table `dishes`
 --
 ALTER TABLE `dishes`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `queries`
+--
+ALTER TABLE `queries`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `subCats`
