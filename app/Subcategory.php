@@ -8,7 +8,7 @@ class Subcategory extends Model
 {
     protected $table='subCats';
 
-    public function subCategory()
+    public function Category()
     {
         return $this->belongsTo('App\Category');
     }

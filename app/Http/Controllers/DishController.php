@@ -14,17 +14,12 @@ use Illuminate\View\View;
 
 class DishController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $user=User::find(Auth::User()->id);
         $cat=Subcategory::all();
         if($user->role=='admin' && $user->status=='active') {
-            Return View('user.newStory',compact('cat'));
+            Return View('admin.newStory',compact('cat'));
         }
         if($user->role=='user' && $user->status=='active') {
             Return View('user.newStory',compact('cat'));
@@ -37,23 +32,19 @@ class DishController extends Controller
 
     public function timeline(){
         $dishes=UserDish::all();
+        $cat=Subcategory::all();
         $user=User::find(Auth::User()->id);
         if($user->role=='admin' && $user->status=='active') {
-            Return View('user.timeline',compact('dishes'));
+            Return View('admin.timeline',compact('dishes','cat'));
         }
         if($user->role=='user' && $user->status=='active') {
-            Return View('user.timeline',compact('dishes'));
+            Return View('user.timeline',compact('dishes','cat'));
 
         }
         else{
             return ['message'=>'You are not authorized to perform this task'];
         }
     }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create(Request $request)
     {
         $user=User::find(Auth::User()->id);
@@ -82,7 +73,7 @@ class DishController extends Controller
             $connection->location=$request->get('location');
             $connection->save();
 
-            return view('user.newStory',compact('cat','user'));
+            return view('admin.newStory',compact('cat','user'));
         }
         if($user->role=='user' && $user->status=='active'){
 
@@ -109,76 +100,46 @@ class DishController extends Controller
             return ['message'=>'You are not authorized to perform this task'];
         }
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function search(Request $request)
     {
-        dd($request->get('search'));
-        $dishes=UserDish::where([
-            ['location', '=', $request->get('search')],
-            ['city', '=', $request->get('search')],
-            ]);
-        dd($dishes);
+        if($request->get('catPatch')=='Nill'){
+        $dishes=UserDish::where('city', '=', $request->get('search'))->get();
         $user=User::find(Auth::User()->id);
+        $cat=Subcategory::all();
         if($user->role=='admin' && $user->status=='active') {
-            Return View('user.timeline',compact('dishes'));
+            Return View('admin.timeline',compact('dishes','cat'));
         }
         if($user->role=='user' && $user->status=='active') {
-            Return View('user.timeline',compact('dishes'));
+            Return View('user.timeline',compact('dishes','cat'));
 
         }
         else{
-            return ['message'=>'You are not authorized to perform this task'];
+            return ['message'=>'You are not authorized to perform this task or Problem in Searching'];
         }
+        }
+        else{
+            $alldishes=Dish::where('sub_category_id',$request->get('catPatch'))->get();
+            foreach ($alldishes as $rawFilter){
+                $dishes[]=UserDish::where([
+                    ['dish_id','=',$rawFilter->id],
+                    ['city', '=', $request->get('search')]
+                    ])->get();
+
+            }
+            $user=User::find(Auth::User()->id);
+            $cat=Subcategory::all();
+            if($user->role=='admin' && $user->status=='active') {
+                Return View('admin.timelineWithCat',compact('dishes','cat'));
+            }
+            if($user->role=='user' && $user->status=='active') {
+                Return View('user.timelineWithCat',compact('dishes','cat'));
+
+            }
+            else{
+                return ['message'=>'You are not authorized to perform this task or Problem in Searching'];
+            }
+        }
+
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        Return View('specificDish');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        Return View('specificDishEditingForm');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        Return Redirect()->back();
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        Return View('dish');
-    }
 }

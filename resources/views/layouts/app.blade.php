@@ -5,18 +5,16 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>PLATE99-</title>
+    <title>PLATE99</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
-
+    <link rel="shortcut icon" href="{{asset('/img/favBlack.png')}}" type="image/x-icon">
     <!-- Bootstrap core CSS     -->
     <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet" />
 
     <!-- Animation library for notifications   -->
     <link href="{{asset('/css/animate.min.css')}}" rel="stylesheet"/>
-
     <!--  Light Bootstrap Table core CSS    -->
     <link href="{{asset('/css/light-bootstrap-dashboard.css')}}" rel="stylesheet"/>
 
@@ -29,53 +27,66 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="{{asset('/css/pe-icon-7-stroke.css')}}" rel="stylesheet" />
+    <link href="{{asset('/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+    <link href="{{asset('/css/styleFrontEnd.css')}}" rel="stylesheet">
+    <script src="{{asset('/js/modernizr.js')}}"></script>
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
 
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
 
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Plate99
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
-                </ul>
-
-                <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Authentication Links -->
-                    @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
-                    @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                            </ul>
-                        </li>
-                    @endif
-                </ul>
-            </div>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="pre-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
         </div>
+    </div>
+</div>
+<!-- end Preloader -->
+
+<div class="container-fluid">
+    <!-- box header -->
+    <header class="box-header">
+        <div class="box-logo">
+            <a href="/"><img src="img/fav.png" width="50" alt="Logo"></a>
+        </div>
+        <!-- box-nav -->
+        <a class="box-primary-nav-trigger" href="#0">
+            <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+        </a>
+        <!-- box-primary-nav-trigger -->
+    </header>
+    <!-- end box header -->
+
+    <!-- nav -->
+    <nav>
+        <ul class="box-primary-nav">
+            <li class="box-label">Menu</li>
+
+            <li><a href="/">Intro</a></li>
+            <li><a href="/about">About me</a></li>
+            <li><a href="/contact">contact me</a></li>
+
+            <!-- Authentication Links -->
+            @if (Auth::guest())
+                <li><a href="{{ url('/login') }}">Login</a></li>
+                <li><a href="{{ url('/register') }}">Register</a></li>
+            @else
+                <li><a href="{{ url('/home') }}">{{ Auth::user()->name }}</a></li>
+                <li><a href="{{ url('/logout') }}">Logout</a></li>
+        @endif
+
+            <!--
+                            <li class="box-label">Follow me</li>
+
+                            <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
+                            <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
+                            <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
+                            <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li> -->
+        </ul>
     </nav>
+
     @yield('content')
 
     <footer class="footer">
@@ -114,5 +125,16 @@
 
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="{{asset('/js/demo.js')}}"></script>
+
+<script src="js/jquery-2.1.1.js"></script>
+<!--  plugins -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/animated-headline.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+
+
+<!--  custom script -->
+<script src="js/custom.js"></script>
 
 </html>

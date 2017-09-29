@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Dish;
 use App\Http\Requests;
+use App\Support;
 use App\User;
+use App\UserDish;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Auth;
@@ -13,21 +16,10 @@ use Illuminate\Support\Facades\Hash;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware('auth');
     }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $user=User::find(Auth::User()->id);
@@ -36,9 +28,49 @@ class HomeController extends Controller
             return view('user.viewUser',compact('user'))->with('error');
         }
         if($user->role=='admin' && $user->status=='active'){
-            return view('user.viewAdmin',compact('user'));
+            return view('admin.viewAdmin',compact('user'));
         }else{
             return Redirect::back();
+        }
+    }
+
+    public function displayAllQueries(){
+        $queriesToDisplay=Support::all();
+        $user=User::find(Auth::User()->id);
+        if($user->role=='admin' && $user->status=='active'){
+            return view('admin.viewAllQueries',compact('user','queriesToDisplay'));
+        }else{
+            return ['message'=>'You are not authorized to avail this section'];
+        }
+    }
+
+    public function statusQuery($id){
+        $support=Support::find($id);
+        $admin=User::find(Auth::User()->id);
+        if($admin->status=='active' && $admin->role=='admin') {
+            if ($support->status == 'active') {
+                $support->status = 'progress';
+                $support->save();
+                $queriesToDisplay = Support::all();
+                return View('admin.viewAllQueries', compact('queriesToDisplay'));
+
+            }
+            if ($support->status == 'progress') {
+                $support->status = 'close';
+                $support->save();
+                $queriesToDisplay = Support::all();
+                return View('admin.viewAllQueries', compact('queriesToDisplay'));
+
+            }
+            else {
+                $support->status = 'active';
+                $support->save();
+                $queriesToDisplay = Support::all();
+                return View('admin.viewAllQueries', compact('queriesToDisplay'));
+
+            }
+        }else{
+            return ['message'=>'You are not authorized to avail this section'];
         }
     }
 
@@ -53,90 +85,64 @@ class HomeController extends Controller
         Auth::logout();
         return redirect()->back();
     }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function allUsers()
     {
         $user=User::find(Auth::User()->id);
         $users=User::all();
         if($user->role=='admin' && $user->status=='active'){
-            Return View('user.allusers',compact('users'));
+            Return View('admin.allusers',compact('users'));
         }else{
             Return ['message'=>'You are not authorized to avail this section'];
         }
     }
 
-    public function userStatus(Request $request,$id){
-        $user=User::find($id);
-        if($user->status=='active'){
-            $user->status='deactive';
-            $user->save();
-            $users=User::all();
-            return View('user.allusers',compact('users'));
+    public function makeAdmin($id)
+    {
+        $user=User::find(Auth::User()->id);
+        if($user->role=='admin' && $user->status=='active'){
+            $userMakedAdmin=User::find($id);
+            if($userMakedAdmin->role=='admin'){
+                $changedRoleToUser=User::find($id);
+                $changedRoleToUser->role='user';
+                $changedRoleToUser->save();
+                $users=User::all();
+                Return View('admin.allusers',compact('users'));
+            }
+            if($userMakedAdmin->role=='user'){
+                $changedRoleToAdmin=User::find($id);
+                $changedRoleToAdmin->role='admin';
+                $changedRoleToAdmin->save();
+                $users=User::all();
+                Return View('admin.allusers',compact('users'));
+            }
 
         }else{
-            $user->status='active';
-            $user->save();
-            $users=User::all();
-            return View('user.allusers',compact('users'));
-
+            Return ['message'=>'You are not authorized to avail this section'];
         }
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-       // Return View('newUserAddition');
+    public function userStatus($id){
+        $user=User::find($id);
+        $admin=User::find(Auth::User()->id);
+        if($admin->status=='admin' && $admin->role=='admin') {
+            if ($user->status == 'active') {
+                $user->status = 'deactive';
+                $user->save();
+                $users = User::all();
+                return View('admin.allusers', compact('users'));
+
+            } else {
+                $user->status = 'active';
+                $user->save();
+                $users = User::all();
+                return View('admin.allusers', compact('users'));
+
+            }
+        }else{
+            return ['message'=>'You are not authorized to avail this section'];
+        }
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        Return Redirect()->back();
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        Return View('specificUser');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //Return View('specificUserEditingForm');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request)
     {
 
@@ -164,7 +170,7 @@ class HomeController extends Controller
                 return view('user.viewUser', compact('user'));
             }
             if ($user->role == 'admin') {
-                return view('user.viewAdmin', compact('user'));
+                return view('admin.viewAdmin', compact('user'));
             } else {
                 return Redirect::back();
             }
@@ -173,14 +179,47 @@ class HomeController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        Return View('viewAllUsers');
+    public function storyControlSection(){
+        $user=User::find(Auth::User()->id);
+        if($user->role=='admin' && $user->status=='active'){
+            $dishes=Dish::all();
+            Return View('admin.controllStory',compact('user','dishes'));
+        }else{
+            Return ['message'=>'You are not authorized to avail this section'];
+        }
     }
+
+    public function statusStory($id){
+        $dishe=Dish::find($id);
+        $user=User::find(Auth::User()->id);
+        if($user->role=='admin' && $user->status=='active'){
+        if($dishe->status=='active'){
+            $dishe->status='deactive';
+            $dishe->save();
+            $dishes=Dish::all();
+            return View('admin.controllStory',compact('dishes','user'));
+
+        }else{
+            $dishe->status='active';
+            $dishe->save();
+            $dishes=Dish::all();
+            return View('admin.controllStory',compact('dishes','user'));
+
+        }
+        }else{
+            return['message'=>'You are not authorized to perfrom this task'];
+        }
+    }
+
+    public function indiviualHistory(){
+        $user=User::find(Auth::User()->id);
+        if($user->role=='user') {
+            $dishes = UserDish::where('uploader_id', $user->id)->get();
+            return View('user.storyHistory', compact('dishes', 'user'));
+
+        }else{
+            return ['message'=>'UnAuthorized invasion'];
+        }
+    }
+
 }

@@ -8,12 +8,12 @@ class Dish extends Model
 {
     protected $table='dishes';
 
-    public function subCategory()
+    public function dishesSubCategory()
     {
         return $this->belongsTo('App\Subcategory');
     }
 
-    public function userDish()
+    public function user()
     {
         return $this->hasMany('App\UserDish');
     }
